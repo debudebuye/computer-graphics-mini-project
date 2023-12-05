@@ -1,6 +1,7 @@
 #include<GL/glut.h>
 #include <math.h>
 void myfirstcode(void){
+	
    glClear(GL_COLOR_BUFFER_BIT);
   glClearColor(0.0,0.0,0.0,0.0);
   glColor3f(1.0,1.0,1.0);
@@ -315,10 +316,12 @@ glFlush();
 
 
 int main(int argc, char* argv[]) {
+	
 glutInit(&argc,argv);
 glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
 glutInitWindowSize(820,820);
 glutInitWindowPosition(150,10);
+	
 glutCreateWindow("Debela Haile computer graphics mini project");
 glutKeyboardFunc(handleKeyPress);
 glutSpecialFunc(handleArrow);
